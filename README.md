@@ -1,2 +1,16 @@
 # alfred-parrot
-Cult of the Party Parrot for Microsoft Teams
+
+Alfred Workflow for the Cult of the Party Parrot for people not having Slack.
+
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave1parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave2parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave3parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave4parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave5parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave6parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave7parrot.gif' alt='Parrot'/>
+
+## See also
+
+- https://cultofthepartyparrot.com/
+- https://github.com/jmhobbs/cultofthepartyparrot.com
