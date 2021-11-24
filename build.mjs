@@ -11,6 +11,12 @@ const PATHS = {
   parrotBase: path.resolve('./node_modules/cultofthepartyparrot.com'),
 };
 
+// {
+//   "imagefile":"parrot.gif",
+//   "title":"Parrot",
+//   "arg":"https://cultofthepartyparrot.com/parrots/hd/parrot.gif",
+//   "subtitle":"Parrot"
+// };
 const mapToPlist =
   (root) =>
   ({ name, tip, gif, hd }) => {
@@ -47,14 +53,6 @@ const images = {
     )
     .map(mapToPlist('guests')),
 };
-
-// const a = {
-// "imagefile":"parrot.gif",
-// "title":"Parrot",
-// "arg":"https://cultofthepartyparrot.com/parrots/hd/parrot.gif",
-// "subtitle":"Parrot"
-// };
-
 // CREATE DIRS
 await mkdirp(PATHS.listFilterImages);
 await mkdirp(PATHS.listFilterImages + '/parrots/hd');
@@ -87,4 +85,23 @@ await Promise.all(
     );
   })
 );
-// await files.map((f) => fs.copyFile(path.resolve(__dirname, './src/static', f), path.resolve(__dirname, './dist', f)));
+
+// CREATE info.plist
+const allParrots = [...images.parrots, ...images.guests, ...images.flags].sort(
+  (a, b) => (a.title < b.title ? -1 : a.title > b.title ? 1 : 0)
+);
+
+debug(chalk.blue('Writing info.plist'));
+const plist = await fs.readFile('./src/info.plist.template', 'utf-8');
+const plistWithParrots = plist.replace(
+  'REPLACE_ME_WITH_PARROTS_JSON',
+  JSON.stringify(allParrots)
+);
+await fs.writeFile(
+  path.resolve(PATHS.dist, 'Info.plist'),
+  plistWithParrots,
+  'utf-8'
+);
+
+// Done
+debug(chalk.green('Done :)'));
