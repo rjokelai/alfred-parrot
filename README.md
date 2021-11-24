@@ -9,6 +9,8 @@ Alfred Workflow for the Cult of the Party Parrot for people not having Slack.
 <img width=30 src='https://cultofthepartyparrot.com/parrots/wave5parrot.gif' alt='Parrot'/>
 <img width=30 src='https://cultofthepartyparrot.com/parrots/wave6parrot.gif' alt='Parrot'/>
 <img width=30 src='https://cultofthepartyparrot.com/parrots/wave7parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave8parrot.gif' alt='Parrot'/>
+<img width=30 src='https://cultofthepartyparrot.com/parrots/wave9parrot.gif' alt='Parrot'/>
 
 ## See also
 
