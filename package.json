@@ -9,12 +9,22 @@
     "type": "git",
     "url": "git+https://github.com/rjokelai/alfred-parrot.git"
   },
-  "keywords": ["Scirocco", "Cult of the Party Parrot", "Party Parrot", "Parrot"],
+  "keywords": [
+    "Scirocco",
+    "Cult of the Party Parrot",
+    "Party Parrot",
+    "Parrot"
+  ],
   "author": "Reko Jokelainen",
   "license": "ISC",
   "private": true,
   "bugs": {
     "url": "https://github.com/rjokelai/alfred-parrot/issues"
   },
-  "homepage": "https://github.com/rjokelai/alfred-parrot#readme"
+  "homepage": "https://github.com/rjokelai/alfred-parrot#readme",
+  "dependencies": {
+    "cultofthepartyparrot.com": "github:jmhobbs/cultofthepartyparrot.com",
+    "js-yaml": "^4.1.0",
+    "rimraf": "^3.0.2"
+  }
 }
