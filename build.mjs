@@ -3,6 +3,10 @@ import * as fs from 'fs/promises';
 import yaml from 'js-yaml';
 import * as path from 'path';
 import { debug, mkdirp } from './src/utils.mjs';
+import * as cp from 'child_process';
+import * as util from 'util';
+
+const exec = util.promisify(cp.exec);
 
 const PATHS = {
   dist: path.resolve('./dist'),
@@ -103,5 +107,9 @@ await fs.writeFile(
   'utf-8'
 );
 
+// ZIP IT
+exec('zip -r parrots.alfredworkflow .', { cwd: PATHS.dist });
+
 // Done
 debug(chalk.green('Done :)'));
+console.log('Archive at ', path.resolve(PATHS.dist, 'parrots.alfredworkflow'));
