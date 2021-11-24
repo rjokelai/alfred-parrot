@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Alfred Workflow for the Cult of the Party Parrot for people not having Slack.",
   "scripts": {
-    "build": "node build.mjs"
+    "clean": "rimraf dist/",
+    "build": "npm run clean && node build.mjs"
   },
   "repository": {
     "type": "git",
