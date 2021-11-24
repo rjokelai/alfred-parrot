@@ -1,0 +1,20 @@
+{
+  "name": "alfred-parrot",
+  "version": "1.0.0",
+  "description": "Alfred Workflow for the Cult of the Party Parrot for people not having Slack.",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjokelai/alfred-parrot.git"
+  },
+  "keywords": ["Scirocco", "Cult of the Party Parrot", "Party Parrot", "Parrot"],
+  "author": "Reko Jokelainen",
+  "license": "ISC",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rjokelai/alfred-parrot/issues"
+  },
+  "homepage": "https://github.com/rjokelai/alfred-parrot#readme"
+}
