@@ -26,5 +26,6 @@ Prerequisites:
 The build script will download the latest parrots and build the workflow under `dist/`
 
 ```
+> npm ci
 > npm run build
 ```
