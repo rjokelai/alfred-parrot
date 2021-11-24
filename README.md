@@ -16,3 +16,15 @@ Alfred Workflow for the Cult of the Party Parrot for people not having Slack.
 
 - https://cultofthepartyparrot.com/
 - https://github.com/jmhobbs/cultofthepartyparrot.com
+
+## Building
+
+Prerequisites:
+
+- Node.js >=16 installed
+
+The build script will download the latest parrots and build the workflow under `dist/`
+
+```
+> npm run build
+```
