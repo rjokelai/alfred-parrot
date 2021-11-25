@@ -17,7 +17,7 @@
     "Parrot"
   ],
   "author": "Reko Jokelainen",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "bugs": {
     "url": "https://github.com/rjokelai/alfred-parrot/issues"
