@@ -1,5 +1,7 @@
 # alfred-parrot
 
+[![CircleCI](https://circleci.com/gh/rjokelai/alfred-parrot/tree/main.svg?style=svg)](https://circleci.com/gh/rjokelai/alfred-parrot/tree/main)
+
 Alfred Workflow for the Cult of the Party Parrot for people not having Slack.
 
 <img width=30 src='https://cultofthepartyparrot.com/parrots/wave1parrot.gif' alt='Parrot'/>
